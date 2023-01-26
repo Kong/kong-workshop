@@ -9,7 +9,7 @@
 set -o errexit
 
 
-cat <<EOF > /tmp/kind-config.yaml && kind create cluster --config /tmp/kind-config.yaml
+cat <<EOF > /tmp/kind-config.yaml && sudo kind create cluster --config /tmp/kind-config.yaml
 apiVersion: kind.x-k8s.io/v1alpha4
 kind: Cluster
 name: kong
