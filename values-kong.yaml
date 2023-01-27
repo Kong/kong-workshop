@@ -34,8 +34,8 @@ env:
   lua_package_path: /opt/?.lua;;
   portal: off
   event_hooks_enabled: "on"
-  admin_api_uri: up-workshop-2.centralus.cloudapp.azure.com:30001
-  admin_gui_url: http://up-workshop-2.centralus.cloudapp.azure.com:30002
+  admin_api_uri: <change-me>:30001
+  admin_gui_url: http://<change-me>:30002
 
 # Specify Kong's Docker image and repository details here
 image:
