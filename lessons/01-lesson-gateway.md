@@ -83,13 +83,13 @@ http POST :30001/services name=mockbin url=http://mockbin_my-applications_svc_30
 ```
 # change host before you run command
 http POST :30001/services/mockbin/routes \
-hosts:='["up-workshop-X.centralus.cloudapp.azure.com"]' \
+hosts:='["your-kong-host"]' \
 paths:='["/mockbin"]' \
 strip_path:='true'
 ```
 
 3.
-From your browser, open http://up-workshop-X.centralus.cloudapp.azure.com:30080/mockbin
+From your browser, open http://your-kong-host:30080/mockbin
 
 #### Plugins and policy
 1.
