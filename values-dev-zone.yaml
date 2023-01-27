@@ -1,0 +1,9 @@
+kuma:
+  controlPlane:
+    mode: zone
+    zone: <change-me>
+  ingress:
+    enabled: true
+    service:
+      type: NodePort
+      nodePort: 30010
