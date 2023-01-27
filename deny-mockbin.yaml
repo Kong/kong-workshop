@@ -1,0 +1,15 @@
+apiVersion: kuma.io/v1alpha1
+kind: MeshTrafficPermission
+metadata:
+  namespace: kong-mesh-system
+  name: deny-mockbin
+spec:
+  targetRef: # 1
+    kind: MeshService
+    name: mockbin_my-applications_svc_3000
+  from:
+    - targetRef: # 2
+        kind: MeshService
+        name: union-pacific-workshop-kong-admin_kong_svc_8001
+      default: # 3
+        action: DENY

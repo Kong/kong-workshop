@@ -1,0 +1,18 @@
+apiVersion: kuma.io/v1alpha1
+kind: AccessRoleBinding
+metadata:
+  name: default
+spec:
+  subjects:
+    - type: Group
+      name: 'mesh-system:admin'
+    - type: Group
+      name: 'system:masters'
+    - type: Group
+      name: 'system:serviceaccounts:kube-system'
+    - type: User
+      name: damon.sorrentino@konghq.com
+    - type: User
+      name: service.mesh.demo@gmail.com
+  roles:
+    - admin
