@@ -14,14 +14,14 @@ http POST :30001/services name=counter url=http://counter-app_main-application_s
 
 # change host
 http POST :30001/services/counter/routes \
-hosts:='["up-workshop-X.centralus.cloudapp.azure.com"]' \
+hosts:='["<change-me>"]' \
 paths:='["/"]' \
 name='counter_route'
 ```
-http://up-workshop-X.centralus.cloudapp.azure.com:30080
+http://<change-me>:30080
 
 ```
-CONTEXT=gke_sales-engineering-282713_us-central1_global-up-workshop-pkanrwjd
+CONTEXT=<change-me>
 kubectl apply -f default-mesh-locale.yaml --context $CONTEXT
 ```
 
