@@ -42,7 +42,7 @@ helm repo add kong https://charts.konghq.com ; helm repo update
 5.
 
 ```
-helm upgrade --install union-pacific-workshop kong/kong --namespace $MAIN_APP_NS --values values-kong.yaml --kube-context $CONTEXT --set ingressController.installCRDs=false
+helm upgrade --install kong-workshop kong/kong --namespace $MAIN_APP_NS --values values-kong.yaml --kube-context $CONTEXT --set ingressController.installCRDs=false
 kubectl get po -n kong --context $CONTEXT -w
 ```
 
