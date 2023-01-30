@@ -1,17 +1,20 @@
 
 # Using OPA for fine grained authorization inside the mesh
 
+_Note: This lesson is designed to be run by a single persion because this policy will affect the whole mesh. If you are working ahead, please stop here._
+
 #### Examine policy
 ```
 cat opa.yaml
 ```
 
 ```
-CONTEXT=gke_sales-engineering-282713_us-central1_global-up-workshop-pkanrwjd
+CONTEXT=<change-me>
 kubectl apply -f opa.yaml --context $CONTEXT
 ```
 
-Try calling service
+After you apply this policy, try calling service. Everybody should get denied.
 
+Open your browser and go to http://jwt.io. Create a JWT with the secret containing value of "secret".
 
-Create a JWT with "role" claim and make sure it is encoded with secret of "secret"
+![jwt.io](jwt.png)

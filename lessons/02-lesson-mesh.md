@@ -4,7 +4,7 @@
 
 # Examine Policy file
 ```
-CONTEXT=gke_sales-engineering-282713_us-central1_global-up-workshop-pkanrwjd
+CONTEXT=<change-me>
 cat deny-mockbin.yaml
 ```
 
