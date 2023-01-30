@@ -10,6 +10,6 @@ spec:
   from:
     - targetRef: # 2
         kind: MeshService
-        name: union-pacific-workshop-kong-admin_kong_svc_8001
+        name: <change-me>
       default: # 3
         action: DENY
