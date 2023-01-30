@@ -3,6 +3,8 @@
 
 _Note: This lesson is designed to be run by a single persion because this policy will affect the whole mesh. If you are working ahead, please stop here._
 
+In order to run this demo, you will need to have access to an API debugging tool like [Insomnia](http://insomnia.rest) or Postman.
+
 #### Examine policy
 ```
 cat opa.yaml
