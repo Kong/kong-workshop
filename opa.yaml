@@ -31,5 +31,5 @@ spec:
 
           is_token_valid {
             token.valid
-            payload.role == "admin"
+            token.payload.role == "admin"
           }
