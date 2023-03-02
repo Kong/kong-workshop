@@ -12,4 +12,4 @@ spec:
         kind: MeshService
         name: <change-me>
       default: # 3
-        action: DENY
+        action: Deny
