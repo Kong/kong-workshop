@@ -12,6 +12,8 @@ kubectl create secret generic kong-mesh-license -n kong-mesh-system --from-file=
 
 helm repo add kong-mesh https://kong.github.io/kong-mesh-charts
 
+helm repo update
+
 # install Kong Mesh
 helm upgrade -i -n kong-mesh-system kong-mesh kong-mesh/kong-mesh \
     --values values-dev-zone.yaml \
